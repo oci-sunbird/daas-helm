@@ -3,6 +3,16 @@ entries:
   certificateapi:
   - apiVersion: v2
     appVersion: 1.16.0
+    created: "2024-04-13T06:12:48.279671139Z"
+    description: A Helm chart for Kubernetes
+    digest: 10fd4ac9aaaf0202e727126efc9e566d8238fd333d6612e68cab55d5cfe82536
+    name: certificateapi
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/certificateapi-0.1.2/certificateapi-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
     created: "2024-04-13T05:50:53.073955803Z"
     description: A Helm chart for Kubernetes
     digest: 077fa5271476cdf17bdfb314afd3fc444f1e4d61764446e9f98049012fb0efcd
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://oci-sunbird.github.io/daas-helm/certificateapi-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-13T05:50:53.073964099Z"
+generated: "2024-04-13T06:12:48.279684664Z"
