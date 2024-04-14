@@ -25,7 +25,7 @@ spec:
 {{- end }}
       containers:
       - name: {{ .Chart.Name }}
-        image: "{{ .Values.dockerhub }}/{{ .Values.repository }}:{{ .Values.image_tag }}"
+        image: {{ .Values.image.registry }}/{{ .Values.image.repository }}:{{ .Values.image.tag }}
         envFrom:
         - configMapRef:
             name: {{ .Chart.Name }}-config
