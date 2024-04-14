@@ -92,4 +92,14 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/identity-0.0.1/identity-0.0.1.tgz
     version: 0.0.1
-generated: "2024-04-14T20:26:35.966936153Z"
+  keycloak:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2024-04-14T21:08:58.531284852Z"
+    description: A Helm chart for Kubernetes
+    digest: 14f0384ab687ee74b6752281b049bff3f786a2d09ace36feffad923fc4298c0f
+    name: keycloak
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/keycloak-0.1.0/keycloak-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-04-14T21:08:58.53130503Z"
