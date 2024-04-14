@@ -95,6 +95,15 @@ entries:
   keycloak:
   - apiVersion: v1
     appVersion: "1.0"
+    created: "2024-04-14T21:21:15.688142786Z"
+    description: A Helm chart for Kubernetes
+    digest: 73eb3f1c2af04828ac1dbe2f0952df5c2b038669043e2c7b0de60d6bdf1617e9
+    name: keycloak
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/keycloak-0.1.1/keycloak-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v1
+    appVersion: "1.0"
     created: "2024-04-14T21:08:58.531284852Z"
     description: A Helm chart for Kubernetes
     digest: 14f0384ab687ee74b6752281b049bff3f786a2d09ace36feffad923fc4298c0f
@@ -102,4 +111,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/keycloak-0.1.0/keycloak-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-14T21:08:58.53130503Z"
+generated: "2024-04-14T21:21:15.688172812Z"
