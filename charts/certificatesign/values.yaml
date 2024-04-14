@@ -1,0 +1,64 @@
+replicaCount: 1
+
+image:
+  registry: docker.io
+  repository: sunbird-rc-certificate-signer
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "v0.0.13"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+resources: {}
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+network:
+  port: 8079
+  targetport: 8079
+strategy:
+  type: RollingUpdate
+  maxsurge: 50%
+  maxunavailable: 50%
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 60
+  targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}
+
+certificatesignenv:
+  PORT: "8079"
+  QR_TYPE: URL
+  CERTIFICATE_DOMAIN_URL: "https://example.com"
+  CERTIFICATE_PUBLIC_KEY: ""
+  CERTIFICATE_PRIVATE_KEY: "" 
+  SIGNING_KEY_TYPE: "RSA"
