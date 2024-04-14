@@ -31,4 +31,15 @@ entries:
     urls:
     - https://oci-sunbird.github.io/daas-helm/certificateapi-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-13T06:12:48.279684664Z"
+  identity:
+  - apiVersion: v2
+    appVersion: 0.0.13
+    created: "2024-04-14T06:29:13.37723907Z"
+    description: Identity chart for Sunbird RC
+    digest: 1e6a36a4fc2fa569e7e7831498ef2349678b0d66e37348f2f46f4cb13cc0e1aa
+    name: identity
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/identity-0.0.1/identity-0.0.1.tgz
+    version: 0.0.1
+generated: "2024-04-14T06:29:13.377253387Z"
