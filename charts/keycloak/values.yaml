@@ -1,0 +1,40 @@
+imagePullSecrets: []
+
+replicaCount: 1
+image:
+  registry: dockerhub
+  repository: sunbird-rc-keycloak
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+resources: {}
+network:
+  port: 8080
+  targetport: 8080
+strategy:
+  type: RollingUpdate
+  maxsurge: '50%'
+  maxunavailable: '50%'
+
+autoscaling:
+  enabled: 'false'
+  minReplicas: 1
+  maxReplicas: 3
+  targetCPUUtilizationPercentage: 60
+  targetMemoryUtilizationPercentage: 80
+
+keycloakenv:
+  DB_PASSWORD: ""
+  KEYCLOAK_PASSWORD: ""
+  KEYCLOAK_LOGO: https://svgshare.com/i/hCs.svg
+  DB_VENDOR: 'postgres'
+  DB_ADDR: ""
+  DB_PORT: '5432'
+  DB_DATABASE: 'registry'
+  DB_USER: registry
+  KEYCLOAK_USER: admin
+  PROXY_ADDRESS_FORWARDING: 'true'
+  KEYCLOAK_IMPORT: /opt/jboss/keycloak/imports/realm-export.json
+  DOMAIN_NAME: ""
+  ADMIN_API_SECRET: ""
