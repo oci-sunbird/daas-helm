@@ -1,7 +1,4 @@
-namespace: dev
 imagepullsecrets: 
-dockerhub: dockerhub
-
 replicaCount: 1
 repository: minio
 image_name: quay.io/minio/minio
@@ -32,7 +29,7 @@ autoscaling:
 
 filestorageenv:
   MINIO_ROOT_USER: admin
-  MINIO_ROOT_PASSWORD: admin1234
+  MINIO_ROOT_PASSWORD: ""
   
 storage_size: 1Gi
 storage_class_name: longhorn
