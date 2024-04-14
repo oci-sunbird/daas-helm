@@ -120,4 +120,14 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/keycloak-0.1.0/keycloak-0.1.0.tgz
     version: 0.1.0
-generated: "2024-04-14T21:39:51.299592811Z"
+  registry:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2024-04-14T22:48:31.232409295Z"
+    description: A Helm chart for Kubernetes
+    digest: 1b875c629e752df0086ef3d3ccab0468728f0190b649e85ab75bc5296cd5c0bf
+    name: registry
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/registry-0.1.0/registry-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-04-14T22:48:31.232430395Z"
