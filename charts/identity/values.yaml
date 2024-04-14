@@ -1,0 +1,15 @@
+global:
+  host: "xyz.net"
+  sunbird: 
+    enable_auth: false 
+    signing_algo: Ed25519Signature2020
+    jwks_uri: ""
+  vault: 
+    address: http://vault.vault.svc.cluster.local:8200
+    base_url: http://vault.vault.svc.cluster.local:8200/v1
+    root_path: http://vault.vault.svc.cluster.local:8200/v1/kv
+    vault_timeout: 5000
+    vault_proxy: false
+  secrets:
+    VAULT_SECRET_TOKEN: ""
+    DB_URL: ""
