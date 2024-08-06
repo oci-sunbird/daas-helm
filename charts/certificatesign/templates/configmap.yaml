@@ -20,5 +20,5 @@ metadata:
   name: {{ .Chart.Name }}-conf
   namespace: {{ .Values.namespace }}
 data:
-{{ (.Files.Glob "configs/*").AsConfig | indent 2 }}
+{{ tpl (.Files.Glob "configs/*").AsConfig .| indent 2 }}
 {{ end }}
