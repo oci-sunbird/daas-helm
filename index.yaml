@@ -34,6 +34,16 @@ entries:
   certificatesign:
   - apiVersion: v1
     appVersion: "1.0"
+    created: "2024-08-07T01:22:36.240757902Z"
+    description: A Helm chart for Kubernetes
+    digest: 7d3db5ed47caf9f250509862659b92465945bf59a69f691c20ac30c314766f81
+    name: certificatesign
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/certificatesign-0.1.4/certificatesign-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v1
+    appVersion: "1.0"
     created: "2024-08-06T21:01:51.275133257Z"
     description: A Helm chart for Kubernetes
     digest: 73287ddc39644dd4fac82c3cd5a601882d86e7d0479683e7d7edd7bf09683de2
@@ -150,4 +160,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/registry-0.1.0/registry-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-06T21:01:51.275160117Z"
+generated: "2024-08-07T01:22:36.240862978Z"
