@@ -124,6 +124,16 @@ entries:
   identity:
   - apiVersion: v2
     appVersion: 0.0.13
+    created: "2024-08-08T21:55:40.298519404Z"
+    description: Identity chart for Sunbird RC
+    digest: a27034f1224ce76b89cb2d5c812460faaaa885df5d0b29f963871887ca48e5bd
+    name: identity
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/identity-0.0.3/identity-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
+    appVersion: 0.0.13
     created: "2024-08-08T21:10:22.863564448Z"
     description: Identity chart for Sunbird RC
     digest: 4a817a58fd80ca69e01a86c1e61c3be98a176ea34bc230e64cbb5a6a34cff6d1
@@ -180,4 +190,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/registry-0.1.0/registry-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-08T21:10:22.863594283Z"
+generated: "2024-08-08T21:55:40.298585979Z"
