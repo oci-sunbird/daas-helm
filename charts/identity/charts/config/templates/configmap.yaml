@@ -4,10 +4,10 @@ metadata:
   name: {{ .Release.Name }}-config
   namespace: {{ .Release.Namespace }}
 data:
-  IDENTITY_BASE_URL: http://{{ .Release.Name }}-identity-service:3332
-  WEB_DID_BASE_URL: http://{{ .Release.Name }}-identity-service:3332
-  SCHEMA_BASE_URL: http://{{ .Release.Name }}-credential-schema-service:3333
-  CREDENTIAL_SERVICE_BASE_URL: http://{{ .Release.Name }}-credentials-service:3000
+  IDENTITY_BASE_URL: {{.Values.global.base_urls.identity | quote}}
+  WEB_DID_BASE_URL: {{.Values.global.base_urls.web_did | quote}}
+  SCHEMA_BASE_URL: {{.Values.global.base_urls.credential_schema | quote}}
+  CREDENTIAL_SERVICE_BASE_URL: {{.Values.global.base_urls.credential_service | quote}}
   JWKS_URI: {{.Values.global.sunbird.jwks_uri | quote}}
   ENABLE_AUTH: {{.Values.global.sunbird.enable_auth | quote}}
   VAULT_ADDR: {{.Values.global.vault.address | quote}} 

@@ -16,6 +16,11 @@ global:
     enable_auth: false 
     signing_algo: Ed25519Signature2020
     jwks_uri: ""
+  base_urls:
+    identity: http://identity-identity-service:3332
+    web_did: http://identity-identity-service:3332
+    credential_schema: http://identity-credential-schema-service:3333
+    credential_service: http://identity-credentials-service:3000
   vault: 
     address: http://vault.vault.svc.cluster.local:8200
     base_url: http://vault.vault.svc.cluster.local:8200/v1
