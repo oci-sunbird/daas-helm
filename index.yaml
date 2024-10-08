@@ -219,4 +219,85 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/registry-0.1.0/registry-0.1.0.tgz
     version: 0.1.0
-generated: "2024-08-19T02:31:30.777351223Z"
+  social-payments-account-registry:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-10-08T03:48:25.905252889Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - condition: redis.enabled
+      name: redis
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 18.x.x
+    - condition: spar-g2pconnect-id-mapper.enabled
+      name: spar-g2pconnect-id-mapper
+      repository: ""
+      version: 0.1.0
+    - condition: sunbird-rc-g2p-mapper-registry.enabled
+      name: sunbird-rc-g2p-mapper-registry
+      repository: ""
+      version: 0.1.0
+    description: A Helm chart for Social Payments Account Registry
+    digest: 319af82c9e647393532f4505246df5bcd8c6981c283fb428a03da58ecba15b5f
+    name: social-payments-account-registry
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/social-payments-account-registry-0.1.0/social-payments-account-registry-0.1.0.tgz
+    version: 0.1.0
+  spar-g2pconnect-id-mapper:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-10-08T03:48:26.03307913Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    description: A Helm chart for SPAR G2P Connect ID Mapper
+    digest: caa51c2262a49aaa914d4e619e76356b6348116aa689aa6ea62441bdcea45624
+    name: spar-g2pconnect-id-mapper
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/spar-g2pconnect-id-mapper-0.1.0/spar-g2pconnect-id-mapper-0.1.0.tgz
+    version: 0.1.0
+  sunbird-rc-core:
+  - apiVersion: v2
+    appVersion: v0.0.14
+    created: "2024-10-08T03:48:26.197530679Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 15.x.x
+    - condition: elasticsearch.enabled
+      name: elasticsearch
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 19.x.x
+    description: A Helm chart for Sunbird Registry
+    digest: 229bd9dc142e4a3a6f05ea363d131ff2b0d93d05249a2995f2f80a693a3dbec5
+    name: sunbird-rc-core
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-core-0.1.0/sunbird-rc-core-0.1.0.tgz
+    version: 0.1.0
+  sunbird-rc-g2p-mapper-registry:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2024-10-08T03:48:26.346667693Z"
+    dependencies:
+    - alias: registry
+      condition: registry.enabled
+      name: sunbird-rc-core
+      repository: ""
+      version: 0.1.0
+    description: A Helm chart for Sunbird RC G2P Mapper Registry
+    digest: 92b969a75686f4f73e57dcf9b13f53a49375866e26c2e5e7629f780fc8eabf3d
+    name: sunbird-rc-g2p-mapper-registry
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-08T03:48:26.346692409Z"
