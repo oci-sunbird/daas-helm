@@ -132,8 +132,8 @@ data:
         <div class="w3-col l2 w3-center"><p></p></div> 
         <div class="w3-col l2 w3-center">
           <a href="https://{{ .Values.landing.injiweb }}">
-             <img src="https://{{ .Values.landing.injiweb }}/static/media/InjiWebLogo.46d2e5e6422ced873f8b.png" style="height:80px">
-          <p>resident</p>
+             <img src="https://{{ .Values.landing.injiweb }}/static/media/InjiWebLogo.46d2e5e6422ced873f8b.png" style="height:50px">
+          <p>Inji Wallet</p>
           </a>
         </div>
         <div class="w3-col l2 w3-center"><p></p></div> 
