@@ -233,6 +233,31 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/keycloak-0.1.0/keycloak-0.1.0.tgz
     version: 0.1.0
+  landing-page:
+  - apiVersion: v2
+    created: "2025-03-19T03:35:29.631842005Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart to installed Downloader for Regstration Client Application
+    digest: 19b4cbc60e8cf226a4e7814a111961a7a6f5f68173b69eb816e3123950107f5e
+    home: https://mosip.io
+    keywords:
+    - mosip
+    - landing-page
+    - registration
+    - client
+    maintainers:
+    - email: info@mosip.io
+      name: MOSIP
+    name: landing-page
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/landing-page-12.0.1-B4/landing-page-12.0.1-B4.tgz
+    version: 12.0.1-B4
   registry:
   - apiVersion: v1
     appVersion: "1.0"
@@ -333,4 +358,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-18T20:41:41.815270202Z"
+generated: "2025-03-19T03:35:29.631892139Z"
