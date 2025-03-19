@@ -114,26 +114,15 @@ data:
           </a>
         </div>
         <div class="w3-col l2 w3-center">
-          <a href="https://{{ .Values.landing.compliance }}">
-          <img src="https://raw.githubusercontent.com/mosip/documentation/1.2.0/docs/_images/compliance-home-page.png" style="height:80px">            <p>COMPLIANCE</p>
+          <a href="https://{{ .Values.landing.injiweb }}">
+             <img src="https://{{ .Values.landing.injiweb }}/static/media/InjiWebLogo.46d2e5e6422ced873f8b.png" style="height:30px">
+          <p>Inji Wallet</p>
           </a>
         </div>
         <div class="w3-col l2 w3-center">
           <a href="https://{{ .Values.landing.resident }}">
              <img src="https://raw.githubusercontent.com/mosip/documentation/1.2.0/docs/_images/resident-home-page.png" style="height:80px">
           <p>resident</p>
-          </a>
-        </div>
-        <div class="w3-col l2 w3-center"><p></p></div> 
-      </div>
-
-      <!-- row 4 -->
-      <div class="w3-row-padding w3-padding-16">
-        <div class="w3-col l2 w3-center"><p></p></div> 
-        <div class="w3-col l2 w3-center">
-          <a href="https://{{ .Values.landing.injiweb }}">
-             <img src="https://{{ .Values.landing.injiweb }}/static/media/InjiWebLogo.46d2e5e6422ced873f8b.png" style="height:50px">
-          <p>Inji Wallet</p>
           </a>
         </div>
         <div class="w3-col l2 w3-center"><p></p></div> 
