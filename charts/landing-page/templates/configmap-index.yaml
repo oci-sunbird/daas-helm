@@ -51,7 +51,7 @@ data:
         </div>
         <div class="w3-col l2 w3-center">
           <a href="https://{{ .Values.landing.keycloak }}">
-            <img src="https://github.com/cncf/artwork/blob/main/projects/keycloak/stacked/color/keycloak-stacked-color.svg" style="height:80px">
+            <img src="https://raw.githubusercontent.com/cncf/artwork/42e13b3cc855f2aa8945edaf82f422b6c9405131/projects/keycloak/stacked/color/keycloak-stacked-color.svg" style="height:80px">
             <p>Keycloak</p>
           </a>
         </div>
