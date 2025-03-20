@@ -205,6 +205,29 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/identity-0.0.1/identity-0.0.1.tgz
     version: 0.0.1
+  inji-certify:
+  - apiVersion: v2
+    created: "2025-03-20T01:26:18.630366913Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart for MOSIP inji-certify module
+    digest: 397d91b1ca4d8756bcecab9346a8101df42b302a73565b667e43004ef2d93fb0
+    home: https://mosip.io
+    keywords:
+    - mosip
+    - inji-certify
+    maintainers:
+    - email: info@mosip.io
+      name: MOSIP
+    name: inji-certify
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/inji-certify-0.10.2/inji-certify-0.10.2.tgz
+    version: 0.10.2
   keycloak:
   - apiVersion: v1
     appVersion: "1.0"
@@ -454,4 +477,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-19T04:20:48.39919983Z"
+generated: "2025-03-20T01:26:18.630425183Z"
