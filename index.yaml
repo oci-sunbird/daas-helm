@@ -283,6 +283,30 @@ entries:
     version: 1.3.0-beta.1-develop
   landing-page:
   - apiVersion: v2
+    created: "2025-04-01T02:31:22.439229621Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart to installed Downloader for Regstration Client Application
+    digest: 05ead64fd404f145f03be2517c8fc27060b1c4b7c901cf11d1a0da2b27a489c3
+    home: https://mosip.io
+    keywords:
+    - mosip
+    - landing-page
+    - registration
+    - client
+    maintainers:
+    - email: info@mosip.io
+      name: MOSIP
+    name: landing-page
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/landing-page-12.0.5/landing-page-12.0.5.tgz
+    version: 12.0.5
+  - apiVersion: v2
     created: "2025-03-19T04:20:48.399145108Z"
     dependencies:
     - name: common
@@ -502,4 +526,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-01T00:53:40.349542349Z"
+generated: "2025-04-01T02:31:22.439294763Z"
