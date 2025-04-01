@@ -256,6 +256,31 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/keycloak-0.1.0/keycloak-0.1.0.tgz
     version: 0.1.0
+  keycloak-init:
+  - apiVersion: v2
+    appVersion: 1.2.0
+    created: "2025-04-01T00:53:40.349481035Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart for Kubernetes to initialize Keycloak  (updating for
+      test)
+    digest: ba531398a3d43dda085cda391cd15ab0a0d300efe65d58ed3d70e1e509d47ff3
+    home: https://mosip.io
+    keywords:
+    - keycloak
+    - access-management
+    maintainers:
+    - email: info@mosip.io
+      name: MOSIP
+    name: keycloak-init
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/keycloak-init-1.3.0-beta.1-develop/keycloak-init-1.3.0-beta.1-develop.tgz
+    version: 1.3.0-beta.1-develop
   landing-page:
   - apiVersion: v2
     created: "2025-03-19T04:20:48.399145108Z"
@@ -477,4 +502,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-03-20T01:26:18.630425183Z"
+generated: "2025-04-01T00:53:40.349542349Z"
