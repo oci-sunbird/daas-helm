@@ -429,6 +429,7 @@ landing:
   esignet: esignet.sandbox.xyz.net
   healthservices: healthservices.sandbox.xyz.net
   injiweb: injiweb.sandbox.xyz.net
+  argocd: argocd.sandbox.xyz.net
   postgres:
     host: postgres.sandbox.mosip.net
     port: 5432

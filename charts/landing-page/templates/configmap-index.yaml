@@ -149,6 +149,12 @@ data:
                  </td>
                  <td class="w3-monospace">{{ .Values.landing.postgres.host }}:{{ .Values.landing.postgres.port }}</td>
                </tr>
+               <tr>
+                 <td>
+                   <img src="https://raw.githubusercontent.com/cncf/artwork/refs/heads/main/projects/argo/stacked/color/argo-stacked-color.png" height="30px">
+                 </td>
+                 <td class="w3-monospace">https://{{ .Values.landing.argocd }}/argocd</td>
+               </tr>
              </table>
           </div>
         <div class="w3-col l4 w3-center"><p></p></div> 
