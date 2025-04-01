@@ -430,6 +430,8 @@ landing:
   healthservices: healthservices.sandbox.xyz.net
   injiweb: injiweb.sandbox.xyz.net
   argocd: argocd.sandbox.xyz.net
+  rancher: rancher.sandbox.xyz.net
+  keycloakrancher: keycloak-rancher.sandbox.xyz.net
   postgres:
     host: postgres.sandbox.mosip.net
     port: 5432

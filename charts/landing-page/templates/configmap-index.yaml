@@ -155,6 +155,18 @@ data:
                  </td>
                  <td class="w3-monospace">https://{{ .Values.landing.argocd }}/argocd</td>
                </tr>
+               <tr>
+                 <td>
+                   <img src="https://www.rancher.com/assets/img/brand-guidelines/assets/logos/png/cow/rancher-logo-cow-blue.png" height="30px">
+                 </td>
+                 <td class="w3-monospace">https://{{ .Values.landing.rancher }}</td>
+               </tr>
+               <tr>
+                 <td>
+                   <img src="https://raw.githubusercontent.com/cncf/artwork/refs/heads/main/projects/keycloak/stacked/color/keycloak-stacked-color.png" height="30px">
+                 </td>
+                 <td class="w3-monospace">https://{{ .Values.landing.keycloakrancher }}</td>
+               </tr>
              </table>
           </div>
         <div class="w3-col l4 w3-center"><p></p></div> 
