@@ -28,7 +28,7 @@ spec:
     name: activemq-websocket
     route:
     - destination:
-        host: activemq-activemq-artemis
+        host: {{ include "artemis.fullname" . }}
         port:
           number: 61616
   - match:
