@@ -3,6 +3,38 @@ entries:
   activemq-artemis:
   - apiVersion: v2
     appVersion: 2.6.2
+    created: "2025-04-07T04:49:19.575736741Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: a multi-protocol, embeddable, very high performance, clustered, asynchronous
+      messaging system.
+    digest: d0399ed42fa94d871b822f6da0f08c847f928b41632be5d855dbacfa26131514
+    home: https://activemq.apache.org/artemis/
+    icon: https://activemq.apache.org/assets/img/activemq_logo_icon.png
+    keywords:
+    - activemq
+    - artemis
+    - messaging
+    - mom
+    - amqp
+    - jms
+    - mqtt
+    maintainers:
+    - email: victor.romero@gmail.com
+      name: vromero
+    name: activemq-artemis
+    sources:
+    - https://github.com/kubernetes/charts
+    - https://github.com/apache/activemq-artemis
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/activemq-artemis-0.0.4/activemq-artemis-0.0.4.tgz
+    version: 0.0.4
+  - apiVersion: v2
+    appVersion: 2.6.2
     created: "2025-04-02T05:06:15.420730779Z"
     dependencies:
     - name: common
@@ -582,4 +614,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-04-02T05:06:15.420794992Z"
+generated: "2025-04-07T04:49:19.575808265Z"
