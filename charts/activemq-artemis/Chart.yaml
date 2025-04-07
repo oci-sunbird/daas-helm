@@ -25,4 +25,4 @@ name: activemq-artemis
 sources:
 - https://github.com/kubernetes/charts
 - https://github.com/apache/activemq-artemis
-version: 0.0.3
+version: 0.0.4
