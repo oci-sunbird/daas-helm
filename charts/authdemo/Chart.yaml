@@ -1,0 +1,18 @@
+apiVersion: v2
+dependencies:
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  tags:
+  - bitnami-common
+  version: 1.x.x
+description: A Helm chart to deploy authdemo for MOSIP modules
+home: https://mosip.io
+keywords:
+- mosip
+- authdemo
+maintainers:
+- email: info@mosip.io
+  name: MOSIP
+name: authdemo
+type: application
+version: 12.0.1-B4
