@@ -1,0 +1,23 @@
+{{- if .Values.istio.enabled }}
+
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: {{ include "common.name" . }}-vs
+  namespace: {{ .Values.namespace }}
+spec:
+  hosts:
+  - registry.{{ .Values.externalDomain }}
+  gateways:
+    - {{ .Values.istio.gateway }}
+  http:
+  - match:
+    - uri:
+        prefix: /
+    route:
+    - destination:
+        host: {{ include "common.name" . }}-svc
+        port:
+          number: {{ .Values.service.port }}
+
+{{- end }}
