@@ -123,6 +123,16 @@ entries:
   beckn-onix-registry:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-16T23:42:11.877110795Z"
+    description: Beckn ONIX Registry Helm chart for Kubernetes
+    digest: 5a1a8424263d1da47280bbd0b076daa23f44403c215374438b8015655b71cfdf
+    name: beckn-onix-registry
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/beckn-onix-registry-0.1.1/beckn-onix-registry-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-16T23:22:35.04513133Z"
     description: Beckn ONIX Registry Helm chart for Kubernetes
     digest: 7dc49256f323dd0ee637258177435eb999f0ae704b397e4734c8fbdbccbc8cfb
@@ -648,4 +658,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-16T23:22:35.045203365Z"
+generated: "2025-07-16T23:42:11.877179865Z"
