@@ -7,7 +7,7 @@ metadata:
   namespace: {{ .Values.namespace }}
 spec:
   hosts:
-  - gateway.{{ .Values.externalDomain }}
+  - {{ .Values.externalDomain }}
   gateways:
     - {{ .Values.istio.gateway }}
   http:

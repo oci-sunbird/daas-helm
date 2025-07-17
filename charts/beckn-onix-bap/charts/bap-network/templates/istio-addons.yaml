@@ -7,7 +7,7 @@ metadata:
   namespace: {{ .Values.namespace }}
 spec:
   hosts:
-  - bap-network.{{ .Values.global.externalDomain }}
+  - {{ .Values.global.externalDomain }}
   gateways:
     - {{ .Values.global.istio.gateway }}
   http:

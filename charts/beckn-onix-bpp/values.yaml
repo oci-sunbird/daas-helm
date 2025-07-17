@@ -36,7 +36,7 @@ global:
     gateway: "istio-system/all-hosts"
 
 # Must be set while installing Helm chart
-  externalDomain: example.com
+  externalDomain: bpp-network.example.com
   registry_url: registry.example.com
   bpp:
     privateKey: "private-key"

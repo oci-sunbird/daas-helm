@@ -94,5 +94,5 @@ tolerations: []
 affinity: {}
 
 # Gateway external domain/sub-domain value. Supply the actual value during Helm install "--set externalDomain=<domain-name>"
-externalDomain:
+externalDomain: gateway.example.com
 
