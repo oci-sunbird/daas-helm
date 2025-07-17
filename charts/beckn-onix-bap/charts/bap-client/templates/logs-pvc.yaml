@@ -8,5 +8,5 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
-  storageClassName: gp2
+      storage: {{ .Values.global.persistence.size }}
+  storageClassName: {{ .Values.global.persistence.storageClassName }}
