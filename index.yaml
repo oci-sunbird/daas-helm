@@ -123,6 +123,16 @@ entries:
   beckn-onix-gateway:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-17T00:39:53.492140529Z"
+    description: Beckn ONIX Gateway Helm chart for Kubernetes
+    digest: 9c83e0c2b3b8ab6984eea28d33841875c5f8a6119d3f293b05b81dd1ecfd8506
+    name: beckn-onix-gateway
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/beckn-onix-gateway-0.1.1/beckn-onix-gateway-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-17T00:32:37.733019022Z"
     description: Beckn ONIX Gateway Helm chart for Kubernetes
     digest: df28c4ea2fdfa60594db0c30a2250d5a36e610c0fd68db54bae8976b941688ab
@@ -669,4 +679,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-17T00:32:37.733083974Z"
+generated: "2025-07-17T00:39:53.492202214Z"
