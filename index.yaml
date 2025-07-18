@@ -123,6 +123,16 @@ entries:
   beckn-onix-bap:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-18T00:37:06.800075118Z"
+    description: Beckn ONIX BAP Helm chart for Kubernetes
+    digest: aa54040fb447864096cf61523771aec73a15c80d8ffabc893833160a3445c70d
+    name: beckn-onix-bap
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/beckn-onix-bap-0.1.4/beckn-onix-bap-0.1.4.tgz
+    version: 0.1.4
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-17T23:41:03.24895393Z"
     description: Beckn ONIX BAP Helm chart for Kubernetes
     digest: c22067f657aa5d48cc776218fa458d180ee4b6904471ff387361fe186695d90c
@@ -791,4 +801,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-18T00:33:08.490011404Z"
+generated: "2025-07-18T00:37:06.80017716Z"
