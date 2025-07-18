@@ -70,3 +70,5 @@ nodeSelector: {}
 tolerations: []
 
 affinity: {}
+
+externalDomain: bpp-client.example.com
