@@ -41,7 +41,7 @@ data:
 
         # RabbitMQ connection details
         # By default password is picked from RabbitMQ POD if not supplied through Helm values.
-        amqpURL: "amqp://{{ .Values.global.rabbitMQamqp.username }}:{{ if .Values.global.rabbitMQamqp.password }}{{ .Values.global.rabbitMQamqp.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "rabbitmq" "namespace" "bpp-common-services" "key" "rabbitmq-password") }}{{ end }}@{{ .Values.global.rabbitMQamqp.host }}:{{ .Values.global.rabbitMQamqp.port }}"
+        amqpURL: "amqp://{{ .Values.global.rabbitMQamqp.username }}:{{ if .Values.global.rabbitMQamqp.password }}{{ .Values.global.rabbitMQamqp.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "rabbitmq" "namespace" "bpp-common-services" "key" "rabbitmq-password") }}{{ end }}@{{ .Values.global.rabbitMQamqp.host }}:{{ .Values.global.rabbitMQamqp.port }}?frameMax=0x2000"
 
       # Mandatory.
       actions:
