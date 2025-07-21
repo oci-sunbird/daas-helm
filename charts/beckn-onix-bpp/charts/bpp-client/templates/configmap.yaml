@@ -23,34 +23,25 @@ data:
       mongoURL: "mongodb://{{ .Values.global.responseCacheMongo.username }}:{{ if .Values.global.responseCacheMongo.password }}{{ .Values.global.responseCacheMongo.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "mongodb" "namespace" "bpp-common-services" "key" "mongodb-root-password") }}{{ end }}@{{ .Values.global.responseCacheMongo.host }}:{{ .Values.global.responseCacheMongo.port }}/{{ .Values.global.responseCacheMongo.dbname }}?authSource=admin"
       ttl: "PT10M"
 
-    # Priority order will be
-    # 1. Synchronous
-    # 2. webhook
-    # 3. pubSub
-
+    # synchronous only required for BPP
     client:
-      synchronous:
-        # By default password is picked from MongoDB POD if not supplied through Helm values.
-        mongoURL: "mongodb://{{ .Values.global.responseCacheMongo.username }}:{{ if .Values.global.responseCacheMongo.password }}{{ .Values.global.responseCacheMongo.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "mongodb" "namespace" "bpp-common-services" "key" "mongodb-root-password") }}{{ end }}@{{ .Values.global.responseCacheMongo.host }}:{{ .Values.global.responseCacheMongo.port }}/{{ .Values.global.responseCacheMongo.dbname }}?authSource=admin"
-        ttl: "PT10M"
-
     # Only required for BPP
-    # webhook:
-       # url: "https://beckn.free.beeceptor.com/clientURL"
+      webhook:
+        url: "http://sandbox.beckn-onix-aws-cdk.becknprotocol.io"
 
+    # Supported mode - bap and bpp
     app:
-      # Supported mode - bap and bpp
       mode: {{ .Values.app.mode }}
 
       # Two types of gateway mode present - client and network
       gateway:
         mode: {{ .Values.app.gateway.mode }}
-        inboxQueue: "inbox"
-        outboxQueue: "outbox"
+        inboxQueue: "inbox-bpp"
+        outboxQueue: "outbox-bpp"
 
         # RabbitMQ connection details
         # By default password is picked from RabbitMQ POD if not supplied through Helm values.
-        amqpURL: "amqp://{{ .Values.global.rabbitMQamqp.username }}:{{ if .Values.global.rabbitMQamqp.password }}{{ .Values.global.rabbitMQamqp.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "rabbitmq" "namespace" "bpp-common-services" "key" "rabbitmq-password") }}{{ end }}@{{ .Values.global.rabbitMQamqp.host }}:{{ .Values.global.rabbitMQamqp.port }}?frameMax=0x2000"
+        amqpURL: "amqp://{{ .Values.global.rabbitMQamqp.username }}:{{ if .Values.global.rabbitMQamqp.password }}{{ .Values.global.rabbitMQamqp.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "rabbitmq" "namespace" "bpp-common-services" "key" "rabbitmq-password") }}{{ end }}@{{ .Values.global.rabbitMQamqp.host }}:{{ .Values.global.rabbitMQamqp.port }}"
 
       # Mandatory.
       actions:
@@ -111,7 +102,7 @@ data:
       # Mandatory keys
       privateKey: {{ .Values.global.bpp.privateKey }}
       publicKey: {{ .Values.global.bpp.publicKey }}
-
+      
       # Subscriber details
       subscriberId: "{{ .Values.global.subscriber_id | default .Values.global.externalDomain }}"
       subscriberUri: "https://{{ .Values.global.externalDomain }}"
@@ -119,7 +110,7 @@ data:
       # Registry 
       registryUrl: "{{ .Values.global.registry_url }}/subscribers"
       auth: false
-      # BAP client key ID
+      # BPP client key ID
       uniqueKey: "{{ .Values.global.externalDomain }}.k1"
 
       # Mandatory
