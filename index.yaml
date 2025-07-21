@@ -184,6 +184,16 @@ entries:
   beckn-onix-bpp:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-21T03:45:29.158402504Z"
+    description: Beckn ONIX BPP Helm chart for Kubernetes
+    digest: e8124d56f870b04adfc153a8dcf10ec874c5fcf2e72ffd116aa02bf0f1c1a63f
+    name: beckn-onix-bpp
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/beckn-onix-bpp-0.1.6/beckn-onix-bpp-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-18T02:26:53.810527833Z"
     description: Beckn ONIX BPP Helm chart for Kubernetes
     digest: 13b903403b3e70bd37ff66af768562446b964f4815263ad6dc2c0eb290192673
@@ -821,4 +831,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-18T02:26:53.810660813Z"
+generated: "2025-07-21T03:45:29.158502993Z"
