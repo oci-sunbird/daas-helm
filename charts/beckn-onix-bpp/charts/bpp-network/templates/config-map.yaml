@@ -6,4 +6,3 @@ metadata:
 data:
   default.yaml: |
 {{ .Values.config | indent 4 }}
-
