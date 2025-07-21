@@ -67,18 +67,18 @@ subscriber_id:
 config: |
   # Mandatory
   server:
-    port: {{ .Values.service.port }}
+    port: 6001
 
   # Redis connection details
   cache:
-    host: {{ .Values.global.redisCache.host }}
-    port: {{ .Values.global.redisCache.port }}
+    host: redis-master.bpp-common-services.svc.cluster.local
+    port: 6379
     ttl: "PT10M"
     db: 1
 
   # Mongodb connection details
   responseCache:
-    mongoURL: "mongodb://{{ .Values.global.responseCacheMongo.username }}:{{ if .Values.global.responseCacheMongo.password }}{{ .Values.global.responseCacheMongo.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "mongodb" "namespace" "bpp-common-services" "key" "mongodb-root-password") }}{{ end }}@{{ .Values.global.responseCacheMongo.host }}:{{ .Values.global.responseCacheMongo.port }}/{{ .Values.global.responseCacheMongo.dbname }}?authSource=admin"
+    mongoURL: "mongodb://root:password@mongodb.bpp-common-services.svc.cluster.local:27017/protocol_server?authSource=admin"
     ttl: "PT10M"
 
   client:
@@ -88,17 +88,17 @@ config: |
 
   # Supported mode - bap and bpp
   app:
-    mode: {{ .Values.app.mode }}
+    mode: bpp
 
     # Two types of gateway mode present - client and network
     gateway:
-      mode: {{ .Values.app.gateway.mode }}
+      mode: network
       inboxQueue: "inbox-bpp"
       outboxQueue: "outbox-bpp"
 
       # RabbitMQ connection details
       # By default password is picked from RabbitMQ POD if not supplied through Helm values.
-      amqpURL: "amqp://{{ .Values.global.rabbitMQamqp.username }}:{{ if .Values.global.rabbitMQamqp.password }}{{ .Values.global.rabbitMQamqp.password }}{{ else }}{{ include "getSecretValue" (dict "secretName" "rabbitmq" "namespace" "bpp-common-services" "key" "rabbitmq-password") }}{{ end }}@{{ .Values.global.rabbitMQamqp.host }}:{{ .Values.global.rabbitMQamqp.port }}?frameMax=0x2000"
+      amqpURL: "amqp://beckn:password@rabbitmq.bpp-common-services.svc.cluster.local:5672?frameMax=0x2000"
 
   # Mandatory
   actions:
@@ -157,19 +157,19 @@ config: |
         ttl: "PT10S"
 
     # Mandatory keys
-    privateKey: {{ .Values.global.bpp.privateKey }}
-    publicKey: {{ .Values.global.bpp.publicKey }}
+    privateKey: private-key
+    publicKey: public-key
 
     # Subscriber details
-    subscriberId: "{{ .Values.global.subscriber_id | default .Values.global.externalDomain }}"
-    subscriberUri: "https://{{ .Values.global.externalDomain }}"
+    subscriberId: bpp-network.example.com
+    subscriberUri: "https://bpp-network.example.com"
 
     #Registry
-    registryUrl: "{{ .Values.global.registry_url }}/subscribers"
+    registryUrl: "registry.example.com/subscribers"
     auth: false
 
     # Bpp client key ID
-    uniqueKey: "{{ .Values.global.externalDomain }}.k1"
+    uniqueKey: "bpp-network.example.com.k1"
 
     #Mandatory
     city: "std:080"
