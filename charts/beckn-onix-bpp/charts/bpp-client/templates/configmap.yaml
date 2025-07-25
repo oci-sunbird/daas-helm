@@ -28,6 +28,7 @@ data:
     # Only required for BPP
       webhook:
         url: "{{ .Values.webhookDomain }}"
+    useHMACForWebhook: false
 
     # Supported mode - bap and bpp
     app:
