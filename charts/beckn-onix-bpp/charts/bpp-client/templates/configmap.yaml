@@ -28,7 +28,6 @@ data:
     # Only required for BPP
       webhook:
         url: "{{ .Values.webhookDomain }}"
-    useHMACForWebhook: false
 
     # Supported mode - bap and bpp
     app:
@@ -131,6 +130,9 @@ data:
         # In minutes
         syncInterval: 30
         redis_db: 3
+
+      useHMACForWebhook: false
+      sharedKeyForWebhookHMAC: ""
 
       useLayer2Config: true
       mandateLayer2Config: true
