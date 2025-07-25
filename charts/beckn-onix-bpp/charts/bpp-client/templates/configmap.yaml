@@ -27,7 +27,7 @@ data:
     client:
     # Only required for BPP
       webhook:
-        url: "http://sandbox.beckn-onix-aws-cdk.becknprotocol.io"
+        url: "{{ .Values.webhookDomain }}"
 
     # Supported mode - bap and bpp
     app:
