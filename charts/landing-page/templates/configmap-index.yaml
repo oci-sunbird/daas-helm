@@ -81,7 +81,7 @@ data:
         </div>
         <div class="w3-col l2 w3-center">
           <a href="https://{{ .Values.landing.minio }}">
-            <img src="https://min.io/resources/img/logo/MINIO_Bird.png" style="height:80px">
+            <img src="https://raw.githubusercontent.com/oci-mosip/icon-images/refs/heads/main/images/minio/Minio_Logo_Black.png" style="height:80px">
             <p>MinIO</p>
           </a>
         </div>
@@ -115,7 +115,7 @@ data:
         </div>
         <div class="w3-col l2 w3-center">
           <a href="https://{{ .Values.landing.injiweb }}">
-             <img src="https://{{ .Values.landing.injiweb }}/static/media/InjiWebLogo.46d2e5e6422ced873f8b.png" style="height:30px">
+             <img src="https://raw.githubusercontent.com/oci-mosip/icon-images/refs/heads/main/images/injiwallet/inji-wallet.png" style="height:30px">
           <p>Inji Wallet</p>
           </a>
         </div>
@@ -145,7 +145,7 @@ data:
                </tr>
                <tr>
                  <td>
-                   <img src="https://www.clipartmax.com/png/full/242-2423721_logo-postgresql.png" height="30px">
+                   <img src="https://raw.githubusercontent.com/oci-mosip/icon-images/refs/heads/main/images/postgres/postgres.png" height="30px">
                  </td>
                  <td class="w3-monospace">{{ .Values.landing.postgres.host }}:{{ .Values.landing.postgres.port }}</td>
                </tr>
@@ -153,19 +153,7 @@ data:
                  <td>
                    <img src="https://raw.githubusercontent.com/cncf/artwork/refs/heads/main/projects/argo/stacked/color/argo-stacked-color.png" height="30px">
                  </td>
-                 <td class="w3-monospace">https://{{ .Values.landing.argocd }}/argocd</td>
-               </tr>
-               <tr>
-                 <td>
-                   <img src="https://www.rancher.com/assets/img/brand-guidelines/assets/logos/png/cow/rancher-logo-cow-blue.png" height="30px">
-                 </td>
-                 <td class="w3-monospace">https://{{ .Values.landing.rancher }}</td>
-               </tr>
-               <tr>
-                 <td>
-                   <img src="https://raw.githubusercontent.com/cncf/artwork/refs/heads/main/projects/keycloak/stacked/color/keycloak-stacked-color.png" height="30px">
-                 </td>
-                 <td class="w3-monospace">https://{{ .Values.landing.keycloakrancher }}</td>
+                 <td class="w3-monospace">https://{{ .Values.landing.argocd }}</td>
                </tr>
              </table>
           </div>
