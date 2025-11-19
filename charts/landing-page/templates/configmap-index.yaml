@@ -133,7 +133,7 @@ data:
         <div class="w3-col l2 w3-center"><p></p></div> 
         <div class="w3-col l2 w3-center">
           <a href="https://{{ .Values.landing.healthservices }}">
-          <img src="https://raw.githubusercontent.com/mosip/documentation/1.2.0/docs/_images/healthservices.png" style="height:80px">            <p>PMP</p>
+          <img src="https://raw.githubusercontent.com/mosip/documentation/1.2.0/docs/_images/healthservices.png" style="height:80px"><p>Health Portal</p>
           </a>
         </div>
       </div>      
