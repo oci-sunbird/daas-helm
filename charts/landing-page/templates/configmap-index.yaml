@@ -127,7 +127,16 @@ data:
         </div>
         <div class="w3-col l2 w3-center"><p></p></div> 
       </div>
-      
+
+      <!-- row 3 -->
+      <div class="w3-row-padding w3-padding-16">
+        <div class="w3-col l2 w3-center"><p></p></div> 
+        <div class="w3-col l2 w3-center">
+          <a href="https://{{ .Values.landing.healthservices }}">
+          <img src="https://raw.githubusercontent.com/mosip/documentation/1.2.0/docs/_images/healthservices.png" style="height:80px">            <p>PMP</p>
+          </a>
+        </div>
+      </div>      
     
       <!-- row 5 -->
       <div class="w3-row-padding w3-padding-16">
