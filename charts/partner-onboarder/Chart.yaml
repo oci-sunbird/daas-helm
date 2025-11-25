@@ -1,0 +1,19 @@
+apiVersion: v2
+dependencies:
+- name: common
+  repository: https://charts.bitnami.com/bitnami
+  tags:
+  - bitnami-common
+  version: 1.x.x
+description: A Helm chart for onboarding default partners for MOSIP sandbox.
+home: https://mosip.io
+keywords:
+- mosip
+- partner-onboarder
+- partners
+maintainers:
+- email: info@mosip.io
+  name: MOSIP
+name: partner-onboarder
+type: application
+version: 12.0.1
