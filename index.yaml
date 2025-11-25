@@ -883,6 +883,30 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/landing-page-12.0.1-B4/landing-page-12.0.1-B4.tgz
     version: 12.0.1-B4
+  partner-onboarder:
+  - apiVersion: v2
+    created: "2025-11-25T05:18:25.891279371Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart for onboarding default partners for MOSIP sandbox.
+    digest: ccfcab3928dc5d10a6c71bbbe9e7b8ad64208168f26443c43525bb6a7292503f
+    home: https://mosip.io
+    keywords:
+    - mosip
+    - partner-onboarder
+    - partners
+    maintainers:
+    - email: info@mosip.io
+      name: MOSIP
+    name: partner-onboarder
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/partner-onboarder-12.0.1/partner-onboarder-12.0.1.tgz
+    version: 12.0.1
   registry:
   - apiVersion: v1
     appVersion: "1.0"
@@ -983,4 +1007,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-19T03:04:36.693430689Z"
+generated: "2025-11-25T05:18:25.891416357Z"
