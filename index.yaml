@@ -883,6 +883,29 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/landing-page-12.0.1-B4/landing-page-12.0.1-B4.tgz
     version: 12.0.1-B4
+  mimoto:
+  - apiVersion: v2
+    created: "2026-02-06T01:08:18.382696317Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: A Helm chart for MOSIP mimoto Application
+    digest: c7c32b7d65adf8aec5791c9a5177a8fdb1fa424fd375867551308e790b35c8b3
+    home: https://mosip.io
+    keywords:
+    - mosip
+    - mimoto
+    maintainers:
+    - email: info@mosip.io
+      name: MOSIP
+    name: mimoto
+    type: application
+    urls:
+    - https://github.com/oci-sunbird/daas-helm/releases/download/mimoto-0.20.0/mimoto-0.20.0.tgz
+    version: 0.20.0
   partner-onboarder:
   - apiVersion: v2
     created: "2025-11-25T05:18:25.891279371Z"
@@ -1007,4 +1030,4 @@ entries:
     urls:
     - https://github.com/oci-sunbird/daas-helm/releases/download/sunbird-rc-g2p-mapper-registry-0.1.0/sunbird-rc-g2p-mapper-registry-0.1.0.tgz
     version: 0.1.0
-generated: "2025-11-25T05:18:25.891416357Z"
+generated: "2026-02-06T01:08:18.382797987Z"
